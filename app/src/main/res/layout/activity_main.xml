@@ -28,4 +28,13 @@
         android:text="Silica"
         android:textAllCaps="true" />
 
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="startNormalise"
+        android:text="Normalise Moisture in oil"
+        android:textAllCaps="true" />
+
 </LinearLayout>
