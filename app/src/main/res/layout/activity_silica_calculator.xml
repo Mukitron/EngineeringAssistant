@@ -26,6 +26,19 @@
         android:hint="@string/oil_volume"
         android:inputType="number" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Calculation based on 300g per 1000 litre oil" />
+
+    <TextView
+        android:id="@+id/breather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="24dp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -34,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:onClick="silicaSizing"
             android:text="Calculate"
             android:textAllCaps="true" />
     </RelativeLayout>
