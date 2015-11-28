@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -18,7 +24,7 @@
         android:text="Basic Oil Analysis"
         android:textAlignment="center"
         android:textSize="36dp" />
-    <!--Moisture-->
+        <!--Moisture 1-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -49,7 +55,7 @@
             android:inputType="number"
             android:textAlignment="textEnd" />
     </RelativeLayout>
-    <!--kV-->
+        <!--kV 2-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -81,7 +87,7 @@
             android:inputType="number"
             android:textAlignment="textEnd" />
     </RelativeLayout>
-    <!--Hydrogen-->
+        <!--Hydrogen 3-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -113,40 +119,294 @@
             android:inputType="number"
             android:textAlignment="textEnd" />
     </RelativeLayout>
-    <!--Oxygen    -->
-    <!--<RelativeLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
+        <!--Oxygen   4 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <!--<TextView-->
-    <!--android:id="@+id/co2"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="     "-->
-    <!--android:textSize="24dp" />-->
-
-
-    <!--<TextView-->
-    <!--android:id="@+id/m3"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_toRightOf="@id/co2"-->
-    <!--android:paddingLeft="16dp"-->
-    <!--android:paddingRight="16dp"-->
-    <!--android:text="Hydrogen"-->
-    <!--android:textSize="24dp" />-->
-
-    <!--<EditText-->
-    <!--android:id="@+id/o2"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_toRightOf="@id/m3"-->
-    <!--android:hint="H2"-->
-    <!--android:inputType="number"-->
-    <!--android:textAlignment="textEnd" />-->
-    <!--</RelativeLayout>-->
+            <TextView
+                android:id="@+id/cO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
 
 
+            <TextView
+                android:id="@+id/m4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cO2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Oxygen"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m4"
+                android:hint="O2"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Nitrogen  5-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cn2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Nitrogen"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m5"
+                android:hint="N2"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Carbon Monoxide  6-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cCO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cCO"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Carbon Monoxide"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/co"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m6"
+                android:hint="CO"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Carbon Dioxide  7-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cCO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cCO2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Carbon Dioxide"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/co2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m7"
+                android:hint="CO2"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Methane  8-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cCH4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cCH4"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Methane"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/ch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m8"
+                android:hint="CH4"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Ethane   9-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cC2H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cC2H6"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Ethane"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/c2h6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m9"
+                android:hint="C2H6"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Ethylene   10-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cC2H4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cC2H4"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Ethylene"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/c2h4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m10"
+                android:hint="C2H4"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--Acetylene   11-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cC2H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cC2H2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Acetylene"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/c2h2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m11"
+                android:hint="C2H2"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+        <!--DP   12-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     "
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/m12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cdp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="DP"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/m12"
+                android:hint="DP"
+                android:inputType="number"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
     <!--Calculate Button-->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -163,3 +423,4 @@
     </RelativeLayout>
 
 </LinearLayout>
+</ScrollView>

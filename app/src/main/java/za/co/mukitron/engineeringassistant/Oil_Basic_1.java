@@ -17,6 +17,8 @@ public class Oil_Basic_1 extends ActionBarActivity {
     }
 
     public void basicOilTest(View view) {
+
+        //Moisture
         EditText em1 = (EditText) findViewById(R.id.moisture1);
         String sm1 = em1.getText().toString();
         int im1 = Integer.parseInt(sm1);
@@ -24,11 +26,11 @@ public class Oil_Basic_1 extends ActionBarActivity {
                 R.id.c1);
         if (im1 >= 0 && im1 <= 10) {
             mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
-
         } else if (im1 > 10 && im1 <= 20) {
             mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
         } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
 
+        //kV
         EditText ek1 = (EditText) findViewById(R.id.kv1);
         String sk1 = ek1.getText().toString();
         int ik1 = Integer.parseInt(sk1);
@@ -36,37 +38,100 @@ public class Oil_Basic_1 extends ActionBarActivity {
                 R.id.c2);
         if (ik1 >= 0 && ik1 <= 60) {
             kvTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
-
         } else if (ik1 > 60 && ik1 <= 70) {
             kvTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
         } else
             kvTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
 
-
+        //Hydrogen
         EditText eh2 = (EditText) findViewById(R.id.h2);
         String sh2 = eh2.getText().toString();
-        int ih2 = Integer.parseInt(sh2);
-        TextView mTextView = (TextView) findViewById(
-                R.id.h2);
+        im1 = Integer.parseInt(sh2);
+        TextView h2TextView = (TextView) findViewById(R.id.ch2);
         if (im1 >= 0 && im1 <= 150) {
-            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+            h2TextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
         } else if (im1 > 150 && im1 <= 1000) {
+            h2TextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else
+            h2TextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //Carbon Monoxide
+        eh2 = (EditText) findViewById(R.id.co);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cCO);
+        if (im1 >= 0 && im1 <= 500) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 500 && im1 <= 1000) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //Carbon Dioxide
+        eh2 = (EditText) findViewById(R.id.co);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cCO2);
+        if (im1 >= 0 && im1 <= 10000) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 10000 && im1 <= 15000) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //Methane
+        eh2 = (EditText) findViewById(R.id.ch4);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cCH4);
+        if (im1 >= 0 && im1 <= 25) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 25 && im1 <= 80) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //Ethane
+        eh2 = (EditText) findViewById(R.id.c2h6);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cC2H6);
+        if (im1 >= 0 && im1 <= 10) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 10 && im1 <= 35) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //Ethylene
+        eh2 = (EditText) findViewById(R.id.c2h4);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cC2H4);
+        if (im1 >= 0 && im1 <= 20) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 20 && im1 <= 100) {
             mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
         } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
 
 
-//        EditText eh2 = (EditText) findViewById(R.id.h2);
-//        String sh2 = eh2.getText().toString();
-//        int ih2 = Integer.parseInt(sh2);
-//        TextView mTextView = (TextView) findViewById(
-//                R.id.h2);
-//        if (im1 >= 0 && im1 <= 150) {
-//            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
-//        } else if (im1 > 150 && im1 <= 1000) {
-//            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
-//        }
-//        else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));;
-//
+        //Acetylene
+        eh2 = (EditText) findViewById(R.id.c2h2);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cC2H2);
+        if (im1 >= 0 && im1 <= 15) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 15 && im1 <= 70) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+        //dp
+        eh2 = (EditText) findViewById(R.id.dp);
+        sh2 = eh2.getText().toString();
+        im1 = Integer.parseInt(sh2);
+        mTextView = (TextView) findViewById(R.id.cdp);
+        if (im1 >= 0 && im1 <= 450) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+        } else if (im1 > 450 && im1 <= 600) {
+            mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        } else mTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
 
 
     }
