@@ -29,5 +29,13 @@ public class MainActivity extends ActionBarActivity {
     public void startMVA(View v) {
         startActivity(new Intent(MainActivity.this, MVACalculator.class));
     }
+
+    public void startNormalise(View v) {
+        startActivity(new Intent(MainActivity.this, Normalise_Moisture.class));
+    }
+
+    public void startOilBasic(View v) {
+        startActivity(new Intent(MainActivity.this, Oil_Basic_1.class));
+    }
 }
 
