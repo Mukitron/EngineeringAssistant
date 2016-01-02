@@ -36,15 +36,32 @@
         android:hint="kV"
         android:inputType="number" />
 
-    <TextView
+    <EditText
         android:id="@+id/current"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="32dp"
-        android:text=""
-        android:textSize="24dp"
-
+        android:hint="Current in Amps"
+        android:ems="10"
+        android:inputType="number"
         />
+
+    <TextView
+        android:id="@+id/maxoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#ff000000"
+        />
+
+    <TextView
+        android:id="@+id/currentoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#ff000000"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"

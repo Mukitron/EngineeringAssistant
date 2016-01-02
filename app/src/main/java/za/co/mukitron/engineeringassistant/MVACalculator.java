@@ -25,20 +25,29 @@ public class MVACalculator extends ActionBarActivity {
         String sMVA = eMVA.getText().toString();
         EditText eKV = (EditText) findViewById(R.id.kv);
         String sKV = eKV.getText().toString();
+        EditText eCurrent = (EditText) findViewById(R.id.current);
+        String sCurrent = eCurrent.getText().toString();
 
-        if (TextUtils.isEmpty(sMVA) || TextUtils.isEmpty(sKV)) {
-            TextView currentTextView = (TextView) findViewById(R.id.current);
+        if (TextUtils.isEmpty(sMVA) || TextUtils.isEmpty(sKV) || TextUtils.isEmpty(sCurrent)) {
+            TextView currentTextView = (TextView) findViewById(R.id.maxoutput);
             currentTextView.setText("Please enter required values");
         } else {
             int iMVA = Integer.parseInt(sMVA);
             int iKV = Integer.parseInt(sKV);
+            int iCurrent = Integer.parseInt(sCurrent);
 
             double result = (iMVA * 1000000) / (Math.sqrt(3) * 1000 * iKV);
             DecimalFormat f = new DecimalFormat("##.00");
             String answer = f.format(result);
 
-            TextView currentTextView = (TextView) findViewById(R.id.current);
-            currentTextView.setText("" + answer + " A");
+            double loading = (iCurrent/result *100);
+            String sloading = f.format(loading);
+
+            TextView currentTextView = (TextView) findViewById(R.id.maxoutput);
+            currentTextView.setText("Max current = " + "" + answer + " A" );
+
+            TextView loadingTextView = (TextView) findViewById(R.id.currentoutput);
+            loadingTextView.setText("Transformer is " + "" + sloading + "% loaded" );
         }
 
     }
